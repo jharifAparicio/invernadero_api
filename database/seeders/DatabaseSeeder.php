@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
-        
+        //sensores
         Dispositivo::factory()->create([
             'nombre' => 'FC-28',
             'descripcion' => 'sensor de humedad y temperatura economico',
@@ -36,6 +36,22 @@ class DatabaseSeeder extends Seeder
             'nombre' => 'LDR',
             'descripcion' => 'fotoresistencia para medir luz',
             'tipo' => 'sensor',
+        ]);
+        //actuadores
+        Dispositivo::factory()->create([
+            'nombre' => 'Ventilador',
+            'descripcion' => 'ventiladores para enfriar genericos',
+            'tipo' => 'actuador',
+        ]);
+        Dispositivo::factory()->create([
+            'nombre' => 'bomba de agua',
+            'descripcion' => 'mini bomba de agua para riego',
+            'tipo' => 'actuador',
+        ]);
+        Dispositivo::factory()->create([
+            'nombre' => 'luces LED',
+            'descripcion' => 'tira de luces LED para iluminar',
+            'tipo' => 'actuador',
         ]);
 
         
