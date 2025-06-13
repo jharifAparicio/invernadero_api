@@ -63,8 +63,8 @@ class DatabaseSeeder extends Seeder
         ]);
         Parametros::factory()->create([
             'tipo' => 'Temperatura',
-            'valor_minimo' => 25,
-            'valor_maximo' => 30,
+            'valor_minimo' => 15,
+            'valor_maximo' => 20,
             'unidad' => '°C',
         ]);
         Parametros::factory()->create([
